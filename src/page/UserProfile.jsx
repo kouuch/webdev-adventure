@@ -3,7 +3,7 @@ import { assets } from "../assets/asset";
 
 const UserProfile = () => {
   return (
-    <div>
+    <div className="w-full h-screen">
       <div className="flex justify-center items-center relative">
         <img
           src={assets.mountain}
@@ -27,7 +27,7 @@ const UserProfile = () => {
           Koleksi karya-karya kami yang penuh tujuan dan emosi. Setiap desain
           membawa makna dan keindahan.
         </p>
-        <div className="relative max-w-5xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 px-8 md:px-0 pt-2 gap-10">
+        <div className="relative max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 px-8 md:px-0 pt-2 gap-10">
           <div className="size-[450px] -top-80 left-1/2 -translate-x-1/2 rounded-full absolute blur-[300px] -z-10 bg-amber-200"></div>
           <div className="py-10 border-b md:py-0 lg:border-r md:border-b-0">
             <div className="mt-5 space-y-2">
@@ -40,11 +40,12 @@ const UserProfile = () => {
               </p>
             </div>
           </div>
-
           <div className="py-10 border-b md:py-0 lg:border-r md:border-b-0 md:px-10">
             <div className="mt-5 space-y-2">
-              <h3>Pengalaman Unik</h3>
-              <p>
+              <h3 className="text-base text-gray-600 text-center">
+                Pengalaman Unik
+              </h3>
+              <p className=" text-sm text-gray-500 text-center">
                 Menciptakan pengalaman yang menyentuh hati dan memberikan kesan
                 mendalam.
               </p>
@@ -52,8 +53,10 @@ const UserProfile = () => {
           </div>
           <div className="py-10 border-b md:py-0 md:border-b-0 md:px-10">
             <div className="mt-5 space-y-2">
-              <h3>Keselarasan dalam Setiap Karya</h3>
-              <p>
+              <h3 className="text-base text-gray-600 text-center">
+                Keselarasan dalam Setiap Karya
+              </h3>
+              <p className="text-sm text-gray-500 text-center">
                 Setiap elemen bekerja bersama untuk menciptakan harmoni yang
                 sempurna.
               </p>
@@ -61,6 +64,7 @@ const UserProfile = () => {
           </div>
         </div>
       </div>
+      <div className="h-screen"></div>
     </div>
   );
 };
