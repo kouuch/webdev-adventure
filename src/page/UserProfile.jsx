@@ -19,36 +19,38 @@ const UserProfile = () => {
           My Name Amang Angkot
         </h1>
       </div>
-      <div className="px-20 mt-10">
-        <p className="mt-5">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae,
-          iusto ab fuga culpa numquam optio quae cupiditate quod, aspernatur
-          illo est fugiat doloribus repellendus sint accusamus vel praesentium?
-          Laboriosam, placeat?
+      <div className="px-20 mt-15">
+        <h1 className="text-3xl font-semibold text-center mx-auto">
+          Tentang Kami
+        </h1>
+        <p className="text-gray-500 text-sm text-center mt-2 max-w-lg mx-auto">
+          Koleksi karya-karya kami yang penuh tujuan dan emosi. Setiap desain
+          membawa makna dan keindahan.
         </p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos,
-        sint alias ea sunt inventore eveniet, perferendis dolore rerum eligendi
-        magni tempore, exercitationem mollitia ipsa facere animi illum aut.
-        Totam, id possimus, porro consequuntur nesciunt animi delectus, aut esse
-        dolorum nam tempora? Cumque fugit eos recusandae, saepe itaque atque
-        odio eveniet, obcaecati reprehenderit ipsam dignissimos at nemo sapiente
-        omnis voluptates ad molestias corrupti repudiandae magni hic est
-        adipisci amet ipsum. Voluptate optio necessitatibus dicta ratione eum
-        labore consequatur. Praesentium, suscipit maiores! <br />
-        Voluptatem temporibus tempora, dolorum amet, cumque maiores sit debitis,
-        et minima quos magnam rem inventore culpa neque delectus adipisci
-        incidunt? Eligendi veniam earum eveniet aliquam delectus nemo, quisquam
-        praesentium, quibusdam ipsa maxime ipsum veritatis dignissimos cum,
-        dolores tenetur aut est vitae sunt autem debitis laboriosam id incidunt.
-        Amet recusandae atque itaque iure veritatis voluptate fugiat quisquam?
-        Ducimus repudiandae quaerat, cum totam ipsum, quibusdam eum consectetur
-        sit numquam repellat delectus suscipit possimus ut nisi qui omnis magni?
-        Ratione nulla quo iusto aliquam et, illum pariatur odit, doloribus,
-        aliquid incidunt saepe ipsa recusandae ducimus facilis natus numquam
-        eos? Eligendi aliquam veritatis ipsam consequuntur? Cupiditate, commodi
-        soluta inventore deserunt sunt eaque laudantium magnam recusandae,
-        accusamus ex esse officiis? Dignissimos necessitatibus quam incidunt
-        sunt.
+        <div className="relative max-w-5xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 px-8 md:px-0 pt-20 bg-green-300">
+          <div className="size-[450px] -top-80 left-1/2 -translate-x-1/2 rounded-full absolute blur-[300px] -z-10 bg-amber-200"></div>
+          <div className="mt-2 space-y-2">
+            <h3 className="text-base font-medium text-gray-600 text-center">Desain yang Memikat</h3>
+            <p>
+              Setiap produk dibuat dengan perhatian pada detail dan keindahan
+              visual.
+            </p>
+          </div>
+          <div>
+            <h3>Pengalaman Unik</h3>
+            <p>
+              Menciptakan pengalaman yang menyentuh hati dan memberikan kesan
+              mendalam.
+            </p>
+          </div>
+          <div>
+            <h3>Keselarasan dalam Setiap Karya</h3>
+            <p>
+              Setiap elemen bekerja bersama untuk menciptakan harmoni yang
+              sempurna.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
