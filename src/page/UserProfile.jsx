@@ -27,28 +27,37 @@ const UserProfile = () => {
           Koleksi karya-karya kami yang penuh tujuan dan emosi. Setiap desain
           membawa makna dan keindahan.
         </p>
-        <div className="relative max-w-5xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 px-8 md:px-0 pt-20 bg-green-300">
+        <div className="relative max-w-5xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 px-8 md:px-0 pt-2 gap-10">
           <div className="size-[450px] -top-80 left-1/2 -translate-x-1/2 rounded-full absolute blur-[300px] -z-10 bg-amber-200"></div>
-          <div className="mt-2 space-y-2">
-            <h3 className="text-base font-medium text-gray-600 text-center">Desain yang Memikat</h3>
-            <p>
-              Setiap produk dibuat dengan perhatian pada detail dan keindahan
-              visual.
-            </p>
+          <div className="py-10 border-b md:py-0 lg:border-r md:border-b-0">
+            <div className="mt-5 space-y-2">
+              <h3 className="text-base font-medium text-gray-600 text-center">
+                Desain yang Memikat
+              </h3>
+              <p className="text-sm text-gray-500 text-center">
+                Setiap produk dibuat dengan perhatian pada detail dan keindahan
+                visual.
+              </p>
+            </div>
           </div>
-          <div>
-            <h3>Pengalaman Unik</h3>
-            <p>
-              Menciptakan pengalaman yang menyentuh hati dan memberikan kesan
-              mendalam.
-            </p>
+
+          <div className="py-10 border-b md:py-0 lg:border-r md:border-b-0 md:px-10">
+            <div className="mt-5 space-y-2">
+              <h3>Pengalaman Unik</h3>
+              <p>
+                Menciptakan pengalaman yang menyentuh hati dan memberikan kesan
+                mendalam.
+              </p>
+            </div>
           </div>
-          <div>
-            <h3>Keselarasan dalam Setiap Karya</h3>
-            <p>
-              Setiap elemen bekerja bersama untuk menciptakan harmoni yang
-              sempurna.
-            </p>
+          <div className="py-10 border-b md:py-0 md:border-b-0 md:px-10">
+            <div className="mt-5 space-y-2">
+              <h3>Keselarasan dalam Setiap Karya</h3>
+              <p>
+                Setiap elemen bekerja bersama untuk menciptakan harmoni yang
+                sempurna.
+              </p>
+            </div>
           </div>
         </div>
       </div>
