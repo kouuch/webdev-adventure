@@ -8,19 +8,19 @@ const UserProfile = () => {
         <img
           src={assets.mountain}
           alt="latar belakang"
-          className="w-full max-h-[300px] object-cover"
+          className="w-full max-h-[200px] md:max-h-[300px] object-cover"
         />
         <img
           src={assets.profile}
           alt="profile"
-          className="absolute h-50 w-50 rounded-full bg-cover mt-4"
+          className="absolute h-25 w-25  md:w-50 md:h-50 rounded-full bg-cover mt-4 top-4 border-4 border-white object-cover hover:scale-105 transition-transform hover:border-blue-600"
         />
-      </div>
-      <div className="px-20 mt-4">
-        <h1 className="text-3xl font-bold text-center mt-3">
+        <h1 className="absolute text-1xl font-bold md:text-3xl mt-3 -bottom-9 bg-white rounded-lg p-3 shadow-lg">
           My Name Amang Angkot
         </h1>
-        <p>
+      </div>
+      <div className="px-20 mt-10">
+        <p className="mt-5">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae,
           iusto ab fuga culpa numquam optio quae cupiditate quod, aspernatur
           illo est fugiat doloribus repellendus sint accusamus vel praesentium?
