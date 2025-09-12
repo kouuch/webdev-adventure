@@ -21,10 +21,10 @@ const UserProfile = () => {
       </div>
       <div className="px-20 mt-15">
         <h1 className="text-3xl font-semibold text-center mx-auto">
-          Tentang Kami
+          Tentang Saya
         </h1>
         <p className="text-gray-500 text-sm text-center mt-2 max-w-lg mx-auto">
-          Koleksi karya-karya kami yang penuh tujuan dan emosi. Setiap desain
+          Koleksi karya-karya saya yang penuh tujuan dan emosi. Setiap desain
           membawa makna dan keindahan.
         </p>
         <div className="relative max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 px-8 md:px-0 pt-2 gap-10">
