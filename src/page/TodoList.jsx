@@ -1,26 +1,25 @@
 import { useState } from "react";
 
 const TodoList = () => {
-  const [count, setCount] = useState(0);
+  const [user, setUser] = useState({
+    name: 'John',
+    age: 30,
+    email: 'john@example.com',
+  });
+
+  const updateUser = () => {
+    
+    setUser({
+      name: 'Kouch', 
+      age: 30, 
+    });
+  };
   return (
     <div className="w-full mt-100">
-      <p>Number Now : {count} </p>
-      <div>
-        {typeof count === "number" ? (
-          count % 2 === 0 ? (
-            <p>Genap</p>
-          ) : (
-            <p>Ganjil</p>
-          )
-        ) : (
-          <p>Bukan Angka</p>
-        )}
-      </div>
-      <div className="border shadow flex gap-4">
-        <button onClick={() => setCount(count + 1)}>Tambah +1</button>
-        <button onClick={() => setCount(count - 1)}>Kurang -1</button>
-        <button onClick={() =>  setCount("string bre")}>String</button>
-      </div>
+      <p>Name: {user.name}</p>
+      <p>Age: {user.age}</p>
+      <p>Email: {user.email}</p>
+      <button onClick={updateUser}>Update Name</button>
     </div>
   );
 };
