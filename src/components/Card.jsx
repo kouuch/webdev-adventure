@@ -28,10 +28,20 @@ const Card = () => {
           <label htmlFor="content" className="font-medium">
             Title
           </label>
-          <input type="text" id="title" className="w-full mt-2 mb-4 border border-gray-500/30 outline-none "/>
+          <input
+            type="text"
+            id="title"
+            className="w-full mt-2 mb-4 border border-gray-500/30 outline-none "
+          />
           <label htmlFor="content">Description</label>
-          <textarea name="" id="description" cols="30" rows="10" className="w-full"></textarea>
-          <input type="text" id="description" className="w-full"/>
+          <textarea
+            name=""
+            id="description"
+            cols="30"
+            rows="10"
+            className="w-full"
+          ></textarea>
+          <input type="text" id="description" className="w-full" />
         </form>
         <div className="w-full mx-auto flex flex-col items-center justify-center px-4 md:px-0">
           {todoList.map((item, index) => (
