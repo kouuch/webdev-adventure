@@ -24,7 +24,15 @@ const Card = () => {
         Todo List
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 px-20 mt-4">
-
+        <form className="bg-white w-full mx-auto rounded-lg p-4 text-left text-gray-500 text-sm border border-gray-300/60">
+          <label htmlFor="content" className="font-medium">
+            Title
+          </label>
+          <input type="text" id="title" className="w-full mt-2 mb-4 border border-gray-500/30 outline-none "/>
+          <label htmlFor="content">Description</label>
+          <textarea name="" id="description" cols="30" rows="10" className="w-full"></textarea>
+          <input type="text" id="description" className="w-full"/>
+        </form>
         <div className="w-full mx-auto flex flex-col items-center justify-center px-4 md:px-0">
           {todoList.map((item, index) => (
             <div
