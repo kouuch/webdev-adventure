@@ -11,7 +11,7 @@ const TodoList = () => {
   ];
 
   return (
-    <div className="w-full mt-100">
+    <div className="w-full mt-80 h-screen">
       <Card title={title} description={description}/>
     </div>
   );
