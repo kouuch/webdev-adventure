@@ -19,37 +19,26 @@ const Card = () => {
       description: "Membaca buku-buku pengembangan diri",
     },
   ];
+
+  const todoDone = [
+    { title: "Belajar React", description: "Mempelajari dasar-dasar React.js" },
+    {
+      title: "Mengerjakan tugas",
+      description: "Menyelesaikan tugas-tugas kuliah",
+    },
+    {
+      title: "Berolahraga",
+      description:
+        "Melakukan aktivitas fisik untuk kesehatan lorem ipsum  Melakukan aktivitas fisik untuk kesehatan lorem ipsum Melakukan aktivitas fisik untuk kesehatan lorem ipsum",
+    },
+  ];
   return (
     <>
       <h1 className="text-3xl text-center text-gray-700 font-semibold">
         Todo List
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 px-20 mt-4">
-        <form className="bg-white w-full mx-auto rounded-lg p-4 text-left text-gray-500 text-sm border border-gray-300/60">
-          <label htmlFor="content" className="font-medium">
-            Title
-          </label>
-          <input
-            type="text"
-            id="title"
-            className="w-full mt-2 mb-4 border border-gray-500/30 outline-none rounded py-2 px-3"
-          />
-          <label htmlFor="content" className="font-medium">
-            Detail
-          </label>
-          <textarea
-            name=""
-            id="description"
-            cols="30"
-            rows="10"
-            className="w-full mt-2 border border-gray-500/30 outline-none rounded resize-none"
-          ></textarea>
-          <div className="flex justify-center mt-3 mb-2">
-            <button className="border-2 py-2 px-4 border-blue-600 bg-blue-500 text-white rounded-lg font-semibold cursor-pointer hover:bg-blue-500 hover:border-green-300">
-              Tambah
-            </button>
-          </div>
-        </form>
+        <Form />
         <div className="w-full mx-auto flex flex-col items-center  px-4  md:px-0">
           <h3>Daftar Tugas</h3>
           {todoList.map((item, index) => (
@@ -67,7 +56,6 @@ const Card = () => {
                   <button className="border rounded-lg py-1.2 px-2 font-medium bg-red-500 text-white border-none hover:bg-red-700 cursor-pointer">
                     Hapus
                   </button>
-
                   <svg
                     width="18"
                     height="18"
@@ -100,7 +88,7 @@ const Card = () => {
             </div>
           ))}
           <h3 className=" mt-4">Tugas Selesai</h3>
-          {todoList.map((item, index) => (
+          {todoDone.map((item, index) => (
             <div
               key={index}
               className="border-b border-slate-200 cursor-pointer w-full"
