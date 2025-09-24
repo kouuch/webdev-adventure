@@ -97,6 +97,7 @@ const Card = () => {
                   {item.description}
                 </p>
               </div>
+              {/* refac */}
               <button
                 onClick={() => taskDone(index)}
                 className="border rounded-lg py-1.2 px-2 font-medium bg-green-500 text-white border-none hover:bg-green-700 cursor-pointer"
@@ -158,7 +159,7 @@ const Card = () => {
                 Hapus
               </button>
             </div>
-          ))}
+          ))}    
         </div>
       </div>
     </>
